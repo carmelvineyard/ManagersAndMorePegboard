@@ -20,70 +20,61 @@
                  }
 
                 button {
-
+		  background-color: #0048ba;
                   color: #ebecf0;
                   padding: 15px 32px;
                   font-family: Georgia, 'Times New Roman', Times, serif;
                   font-size: 20px;
                   text-align: center;
                   float: left;
-                  border: 1px solid #0000ae;
+                  border-radius: 12px;
                 }
-                .notHere {
-                  background-color: #0048ba;
-                }
+                
                 .here {
                   background-color: #00755e;
                 }
 
-                
+
 
          </style>
            <script>
+		
+              function changeColor(target) {
+              	var here = document.getElementById(target);
+		here.classList.toggle("here");
+	      }
 
-        //      function changeColor(target) {
-          //      document.getElementById(target).style.backgroundColor = "#00755e";
-          //      target.className.add("selected");
-          //      console.log (target.className);
-          //    }
 
-              function changeClass(target) {
-                if (target.class=("notHere")) {
-                  target.class.remove("notHere");
-                  target.class.add("here");
-                } else if (target.class.contains("here")) {
-                    target.class.remove("here");
-                    target.class.add("notHere");
-                  }
-                  
-                
-              }
+              
          </script>
 
 </head>
 
- 
-
 <body>
-<H2>Managers and More</H2>  
-<button class="notHere" id="Grey" onclick="changeClass(this.id)">Grey</button>
-<button class="notHere" id="Rose" onclick="changeClass(this.id)">Rose</button>
-<button class="notHere" id="Green" onclick="changeClass(this.id)">Green</button>
-<button class="notHere" id="Mustard" onclick="changeClass(this.id)">Mustard</button>
-<button class="notHere" id="White" onclick="changeClass(this.id)">White</button>
-<button class="notHere" id="Plum" onclick="changeClass(this.id)">Plum</button>
-<button class="notHere" id="Scarlet" onclick="changeClass(this.id)">Scarlet</button>
-<button class="notHere" id="Peach" onclick="changeClass(this.id)">Peach</button>
-<button class="notHere" id="Brunette" onclick="changeClass(this.id)">Brunette</button>
-<button class="notHere" id="Peacock" onclick="changeClass(this.id)">Peacock</button>
+	<h2>Managers and More</h2>
+	<br>
+	
+			<button id = "david" onclick = "changeColor(this.id)">David</button>
+			<button id = "ahart" onclick = "changeColor(this.id)">Ahart</button>
+			<button id = "stephanie" onclick = "changeColor(this.id)">Stephanie</button>
+			<button id = "caz" onclick = "changeColor(this.id)">Caz</button>
+			<button id = "joe" onclick = "changeColor(this.id)">Joe</button>
+			<button id = "adam" onclick = "changeColor(this.id)">Adam</button>
+			<button id = "chelsea" onclick = "changeColor(this.id)">Chelsea</button>
+			<button id = "denise" onclick = "changeColor(this.id)">Denise</button>
+			<button id = "tiffany" onclick = "changeColor(this.id)">Tiffany</button>
+			<button id = "drew" onclick = "changeColor(this.id)">Drew</button>
+		
 
-
-         <script>
-
-         </script>
-
+	
+  	
 </body>
-
 </html>
 
- 
+
+<!-- JS functionality: 
+	click to toggle button on/off
+	form to change names
+
+List is array, form/function changes names within array
+each li is a button in the CSSstyle.-->
