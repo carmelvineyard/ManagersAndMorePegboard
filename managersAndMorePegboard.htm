@@ -5,7 +5,7 @@
 <head>
 
          <meta charset="utf-8">
-
+	 
          <title>Managers And More</title>
 
          <style>
@@ -19,6 +19,10 @@
                           text-align: center;
                  }
 
+		h2 {
+		  float: left;
+		}
+
                 button {
 		  background-color: #0048ba;
                   color: #ebecf0;
@@ -26,7 +30,7 @@
                   font-family: Georgia, 'Times New Roman', Times, serif;
                   font-size: 20px;
                   text-align: center;
-                  float: left;
+                  //float: left;
                   border-radius: 12px;
                 }
                 
@@ -34,16 +38,33 @@
                   background-color: #00755e;
                 }
 
+		.flex-container {
+  		  display: flex;
+ 		  flex-direction: column;
+		 // align-content: space-around;
+		  justify-content: center;
+		}
+
+		.flex-container > div {
+  		  flex-direction: row;
+		  flex-wrap: wrap;
+		 // align-content: space-around;
+		  justify-content: center;
+		}
+
 
 
          </style>
-           <script>
+
+         <script>
 		
               function changeColor(target) {
               	var here = document.getElementById(target);
 		here.classList.toggle("here");
 	      }
 
+		console.log( JSON.parse( localStorage.getItem( 'david' ) ) );
+		console.log( JSON.parse( localStorage.getItem( 'car' ) ) );
 
               
          </script>
@@ -51,8 +72,11 @@
 </head>
 
 <body>
-	<h2>Managers and More</h2>
-	<br>
+	
+	
+	    <div class = "flex-container" id = "button-bank">
+		<h2>Managers and More</h2>
+		<div>
 	
 			<button id = "mustard" onclick = "changeColor(this.id)">Mustard</button>
 			<button id = "white" onclick = "changeColor(this.id)">White</button>
@@ -64,17 +88,12 @@
 			<button id = "scarlet" onclick = "changeColor(this.id)">Scarlet</button>
 			<button id = "rose" onclick = "changeColor(this.id)">Rose</button>
 			<button id = "green" onclick = "changeColor(this.id)">Green</button>
-		
-
+		</div>
+	    </div>
+	
 	
   	
 </body>
 </html>
 
 
-<!-- JS functionality: 
-	click to toggle button on/off
-	form to change names
-
-List is array, form/function changes names within array
-each li is a button in the CSSstyle.-->
