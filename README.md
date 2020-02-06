@@ -8,21 +8,21 @@ We have a non-tech solution, a simple table on our bulletin board with pushpins 
 So I thought I would make a thing. A pegboard or pushpin board but on the front desk computer.
 
 My problems:
--I am not part of the IT department
--I am not an admin on the front desk machine 
--I am not able/ allowed to download any programs onto said machine
--My guess is that making something that accesses information outside the company's network would be a violation of our IT policy
--The front desk machine is running Windows 7 Pro (not entirely relevant, but somewhat noteworthy)
+- I am not part of the IT department
+- I am not an admin on the front desk machine 
+- I am not able/ allowed to download any programs onto said machine
+- My guess is that making something that accesses information outside the company's network would be a violation of our IT policy
+- The front desk machine is running Windows 7 Pro (not entirely relevant, but somewhat noteworthy)
 
 So, I could just make a local file, right? In theory, yes. And I have. Using Notepad. And VSCode, while at home. I emailed the file to myself once, but since then I've simply used Github (accessed through an incognito window) to see the code in both places.
 
 To keep security and privacy concerns to a minimum, this is what I have done:
--The names on Github are different than the actual managers (Master Detective Clue FTW)
--The code does not access *anything* outside the local machine:
-  -No jQuery
-  -No Bootstrap
-  -No online database
-  -**vanilla JS, CSS Flexbox, and local storage** *(not even cookies)*
+- The names on Github are different than the actual managers (Master Detective Clue FTW)
+- The code does not access *anything* outside the local machine:
+  - No jQuery
+  - No Bootstrap
+  - No online database
+  - **vanilla JS, CSS Flexbox, and local storage** *(not even cookies)*
 
 I have done a *lot* of research (while answering phones).
 
