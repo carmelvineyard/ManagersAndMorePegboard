@@ -11,63 +11,73 @@
          <style>
 
                 body {
-
-                          background-color: darkblue;
-                          color: #dcdcdc;
-                          font-family: Georgia, 'Times New Roman', Times, serif;
-                          font-size: 24px;
-                          text-align: center;
+                        background-color: darkblue;
+                        color: #dcdcdc;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-size: 24px;
+                        text-align: center;
                  }
 
 		h2 {
-		  float: left;
+			float: left;
 		}
 
                 button {
-		  background-color: #0048ba;
-                  color: #ebecf0;
-                  padding: 15px 32px;
-                  font-family: Georgia, 'Times New Roman', Times, serif;
-                  font-size: 20px;
-                  text-align: center;
-                  //float: left;
-                  border-radius: 12px;
+		  	background-color: #0048ba;
+                	color: #ebecf0;
+                	padding: 15px 32px;
+                	font-family: Georgia, 'Times New Roman', Times, serif;
+                	font-size: 20px;
+                	text-align: center;
+                	border-radius: 12px;
+			border-color: #005ae9;
                 }
                 
                 .here {
-                  background-color: #00755e;
+                  	background-color: #ceb888;
+		  	color: #2c2a29;
+			border-color: #e7dcc5;
                 }
 
+		.notHere {
+		  	background-color: #782f40;
+		  	color: #ebecf0;
+			border-color: #963b50;
+		}
+		
 		.flex-container {
-  		  display: flex;
- 		  flex-direction: column;
-		 // align-content: space-around;
-		  justify-content: center;
+  			display: flex;
+ 			flex-direction: column;
+			justify-content: center;
 		}
 
 		.flex-container > div {
-  		  flex-direction: row;
-		  flex-wrap: wrap;
-		 // align-content: space-around;
-		  justify-content: center;
+  			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
 		}
 
 
 
          </style>
-
          <script>
 		
-              function changeColor(target) {
-              	var here = document.getElementById(target);
-		here.classList.toggle("here");
+
+               function changeColor(target) {
+		var targetId = document.getElementById(target);
+		targetId.classList.toggle("here");
 	      }
 
-		console.log( JSON.parse( localStorage.getItem( 'david' ) ) );
-		console.log( JSON.parse( localStorage.getItem( 'car' ) ) );
-
+	      function makeItGarnet(target) {
+		var targetId = document.getElementById(target);
+		targetId.classList.toggle("notHere");
+	      }
+	      
+	      
               
          </script>
+
+
 
 </head>
 
@@ -75,25 +85,34 @@
 	
 	
 	    <div class = "flex-container" id = "button-bank">
+
 		<h2>Managers and More</h2>
+
+		<p>Single click to mark a person here- if you send a call to them, you're golden.<br>
+		Double click to mark a person Definitely Not Here- red is a warning not to send any calls to them!</p>
+		<p>Click or Double click again to return the button to the default blue.<br>
+		Refresh the page to return all of them to the default.</p>
+
 		<div>
-	
-			<button id = "mustard" onclick = "changeColor(this.id)">Mustard</button>
-			<button id = "white" onclick = "changeColor(this.id)">White</button>
-			<button id = "peacock" onclick = "changeColor(this.id)">Peacock</button>
-			<button id = "plum" onclick = "changeColor(this.id)">Plum</button>
-			<button id = "gray" onclick = "changeColor(this.id)">Gray</button>
-			<button id = "brunette" onclick = "changeColor(this.id)">Brunette</button>
-			<button id = "peach" onclick = "changeColor(this.id)">Peach</button>
-			<button id = "scarlet" onclick = "changeColor(this.id)">Scarlet</button>
-			<button id = "rose" onclick = "changeColor(this.id)">Rose</button>
-			<button id = "green" onclick = "changeColor(this.id)">Green</button>
+			<button id = "mustard" onclick = "changeColor(this.id)" ondblclick = "makeItGarnet(this.id)">Col. Mustard</button>
+			<button id = "plum" onclick = "changeColor(this.id)" ondblclick = "makeItGarnet(this.id)">Prof. Plum</button>
+			<button id = "white" onclick = "changeColor(this.id)" ondblclick = "makeItGarnet(this.id)">Mrs. White</button>
+			<button id = "peacock" onclick = "changeColor(this.id)" ondblclick = "makeItGarnet(this.id)">Mrs. Peacock</button>
+			<button id = "peach" onclick = "changeColor(this.id)" ondblclick = "makeItGarnet(this.id)">Miss Peach</button>
+			<button id = "green" onclick = "changeColor(this.id)" ondblclick = "makeItGarnet(this.id)">Mr. Green</button>
+			<button id = "scarlet" onclick = "changeColor(this.id)" ondblclick = "makeItGarnet(this.id)">Miss Scarlet</button>
+			<button id = "brunette" onclick = "changeColor(this.id)" ondblclick = "makeItGarnet(this.id)">M. Brunette</button>
+			<button id = "rose" onclick = "changeColor(this.id)" ondblclick = "makeItGarnet(this.id)">Mme. Rose</button>
+			<button id = "grey" onclick = "changeColor(this.id)" ondblclick = "makeItGarnet(this.id)">Sgt. Grey</button>
+						
 		</div>
+			
 	    </div>
 	
 	
   	
 </body>
 </html>
+
 
 
