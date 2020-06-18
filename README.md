@@ -14,7 +14,7 @@ My problems:
 - My guess is that making something that accesses information outside the company's network would be a violation of our IT policy
 - The front desk machine is running Windows 7 Pro (not entirely relevant, but somewhat noteworthy)
 
-So, I could just make a local file, right? In theory, yes. And I have. Using Notepad. And VSCode, while at home. I emailed the file to myself once, but since then I've simply used Github (accessed through an incognito window) to see the code in both places.
+So, I could just make a local file, right? In theory, yes. And I have. Using Notepad, VSCode, and GitHub.
 
 To keep security and privacy concerns to a minimum, this is what I have done:
 - The names on Github are different than the actual managers (Master Detective Clue FTW)
@@ -28,16 +28,7 @@ I have done a *lot* of research (while answering phones).
 
 As of 2/6/2020, the minimum viable product has been up and running for some time: There are buttons with each manager's name that change color when clicked and change back when clicked again.
 
-But I want this to outlast me at this job, which means I need it to be able to be updated by people who are Not Me. 
+For this to outlast me at this job, it'll need a form. I need to generate buttons with id, text, and class from an array. I need to be able to update that array. And I need to make it all usable by people who don't know about alt+tab.
 
-I need a form. I need to generate buttons with id, text, and class from an array. I need to be able to update that array. And I need to make it all usable by people who don't know about alt+tab.
-
-This is the challenge I have given myself.
-
-In the meantime, and when I am done, all one should need to use this code for themselves is to:
-1. Copy code into a Notepad file
-2. Save file as .htm
-3. Open file using Chrome (the only browser I've used so far)
-
-Final note: as of 2/6/2020, I do not have the state of the buttons being saved into local storage, nor do I really plan to. My thinking is to keep the data usage small.
+That is a project for a different repository, as I'm not sure how to do it without using local storage at a minimum.
 
