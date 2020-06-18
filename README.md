@@ -14,7 +14,7 @@ My problems:
 - My guess is that making something that accesses information outside the company's network would be a violation of our IT policy
 - The front desk machine is running Windows 7 Pro (not entirely relevant, but somewhat noteworthy)
 
-My solution: a local html file. Written using Notepad, VSCode, and GitHub.
+My solution: a local html file. Written using Notepad, VSCode, and GitHub. See the result [here].(https://carmelvineyard.github.io/ManagersAndMorePegboard/)
 
 To keep security and privacy concerns to a minimum, this is what I have done:
 - The names on Github are different than the actual managers (Master Detective Clue FTW)
