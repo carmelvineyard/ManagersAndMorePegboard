@@ -14,15 +14,15 @@ My problems:
 - My guess is that making something that accesses information outside the company's network would be a violation of our IT policy
 - The front desk machine is running Windows 7 Pro (not entirely relevant, but somewhat noteworthy)
 
-So, I could just make a local file, right? In theory, yes. And I have. Using Notepad, VSCode, and GitHub.
+My solution: a local html file. Written using Notepad, VSCode, and GitHub.
 
 To keep security and privacy concerns to a minimum, this is what I have done:
 - The names on Github are different than the actual managers (Master Detective Clue FTW)
-- The code does not access *anything* outside the local machine:
+- The code does not access *anything* outside the local file:
   - No jQuery
   - No Bootstrap
   - No online database
-  - **vanilla JS, CSS Flexbox, and local storage** *(not even cookies)*
+  - **Only vanilla JS and CSS Flexbox** 
 
 I have done a *lot* of research (while answering phones).
 
@@ -30,5 +30,5 @@ As of 2/6/2020, the minimum viable product has been up and running for some time
 
 For this to outlast me at this job, it'll need a form. I need to generate buttons with id, text, and class from an array. I need to be able to update that array. And I need to make it all usable by people who don't know about alt+tab.
 
-That is a project for a different repository, as I'm not sure how to do it without using local storage at a minimum.
+That, however, is a project for a different repository, as I'm not sure how to do it without using local storage at a minimum.
 
